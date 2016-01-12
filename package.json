@@ -1,0 +1,16 @@
+{
+  "name": "angularjs-assignment-twitter-handle-generator-master",
+  "version": "1.0.0",
+  "description": "ALL RIGHT! Set up a *NEW* project! From the ground up. Bring in Angular, that's all we will need for our project today.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "author": "jeremycloutier",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "express": "^4.13.3"
+  }
+}
