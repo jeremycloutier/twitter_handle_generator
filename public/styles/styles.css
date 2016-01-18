@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: deepskyblue;
+    color: white;
+}
+h1 {
+    font-size: 48px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 48px;
+}
+.instructions {
+    font-size: 16px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    width: 700px;
+    padding: 10px;
+}
+.btn-info{
+    font-size: 14px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 200px;
+    margin: 2px;
+}
+.eachHandle{
+    font-size: 16px;
+    margin: 0px;
+}
+.handleDiv{
+    margin: 20px 500px 20px 500px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+a {
+    color: black;
+}

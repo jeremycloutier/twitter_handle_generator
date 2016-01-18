@@ -5,15 +5,27 @@
     <title>Twitter Handle Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src = "../node_modules/angular/angular.min.js"></script>
+    <script src = "vendors/angular.min.js"></script>
     <script src = "scripts/client.js"></script>
 </head>
 <body ng-controller="myController">
+    <div class="title">
+        <h1>Twitter Handle Generator</h1>
+    </div>
 
-    <h1>Twitter Handle Generator</h1>
-    <div class = 'buttons'>
-        <button class="loadWords" ng-click='retrieve()'>Load the Words</button>
-        <button class="createHandle" ng-click='generate()'>Generate Twitter Handle</button><br/>
+    <div class="instructions">
+        <p>Instructions: First, click the "Load the Words" button to randomly generate 10 Twitter handles.</p>
+        <p>Then, click the "Generate Twitter Handles" button to make them appear below!</p>
+    </div>
+
+    <div class='buttons'>
+        <button class="btn btn-info" ng-click='retrieve()'>Load the Words</button>
+        <button class="btn btn-info" ng-click='generate()'>Generate Twitter Handle</button><br/>
+    </div>
+
+    <div class = "handleDiv" ng-repeat="twitterHandle in handleArray">
+        <p class="eachHandle">{{twitterHandle}}</p>
+        <a href="http://www.twitter.com/{{twitterHandle}}">Visit {{twitterHandle}}'s Page</a>
     </div>
 
 </body>
